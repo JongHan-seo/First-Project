@@ -1,14 +1,39 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Vintage Watch Expert</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <header class="header">
+    <h1>Vintage Watch Expert</h1>
+    <span>Ask me anything about repairs</span>
+  </header>
+
+  <div id="chat-container">
+    <!-- Messages will appear here -->
+    <div class="message bot">
+      안녕하세요. 빈티지 시계 수리 전문가입니다.
+      무엇이 궁금하신가요? (예: 롤렉스 서브마리너 오버홀 주기)
+    </div>
+  </div>
+
+  <div class="input-area">
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="궁금한 내용을 입력하세요..." autocomplete="off">
+      <button id="send-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
